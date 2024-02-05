@@ -1,0 +1,256 @@
+@font-face {
+    font-family: Verdana;
+    src: url("../fonts/Verdana.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Segoe UI;
+    src: url("../fonts/SegoeUI.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Segoe UI-Bold;
+    src: url("../fonts/SegoeUI-Bold.ttf");
+    font-weight: bold;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 8px 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 4px;
+}
+
+nav a:hover {
+    background-color: #ccc;
+}
+
+.header {
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header img {
+    width: 100%;
+    display: block;
+}
+
+.header__title {
+    font-family: Segoe UI;
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 4px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__title b {
+    font-size: 36px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 4px;
+    background-color: #000;
+    opacity: 0.75;
+    padding: 8px 16px;
+}
+
+.container {
+    max-width: 1500px;
+    /* padding: 8px 16px; */
+    margin: 0 auto;
+    /* position: relative;
+    display: block; */
+}
+.post {
+    padding-top: 32px;
+}
+.post h2 {
+    padding: 16px 0;
+    border-bottom: 1px solid #f1f1f1;
+    margin: 10px 0;
+    font-size: 24px;
+    font-family: Segoe UI;
+    font-weight: 400;
+}
+.post h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    font-family: Segoe UI;
+    font-weight: 400;
+}
+
+.post__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 15px 0;
+}
+.post__content .item {
+    max-width: 363px;
+    position: relative;
+    
+}
+.post__content .item img {
+    width: 100%;
+    display: block;
+}
+.project, .about {
+    margin-top: 32px;
+}
+.project .item p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+}
+.post__content .item p {
+    margin: 15px 0;
+}
+.about .item {
+    filter: grayscale(75%);
+}
+.about .item span {
+    margin: 15px 0;
+    opacity: 0.6;
+}
+.about button {
+    width: 100%;
+    border: none;
+    background-color:#f1f1f1;
+    padding: 8px 0;
+}
+.form {
+    width: 100%;
+
+}
+.form__item input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+.contact button {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    margin: 16px 0;
+    border: none;
+}
+.contact button:hover {
+    background-color:#ccc;
+    color: #000;
+}
+footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+}
+footer p {
+    margin: 15px 0;
+}
+footer p a {
+    color: #fff;
+}
+
+
+/* .projects, .about {
+    padding: 32px 16px; 
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Segoe UI';
+    margin: 10px 0;
+}
+h3:not(.imgs__col h3) {
+    padding: 16px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+img {
+    max-width: 100%;
+    
+}
+.imgs {
+    display: flex;
+    flex-direction: row;
+    padding: 0 8px;
+
+}
+
+.imgs__container {
+    position: relative;
+    display: block;
+}
+
+.imgs__col {
+    position: relative;
+    padding: 0 8px;
+    margin-bottom:  16px;
+    display: block;
+    
+}
+
+.imgs__title {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    flex-direction: row;
+    top: 0;
+    left: 8px;
+    padding: 8px 16px;
+}
+ p {
+    margin: 15px 0;
+ }
+ .opacity {
+    opacity: 0.6;
+ }
+ button {
+    padding: 8px 16px;
+ }
+ .contact {
+    padding: 32px 16px;
+ } */
