@@ -26,19 +26,19 @@
           </a>
         </li>
         <li>
-          <a href="" class="navbar__item">
+          <a href="#about" class="navbar__item">
             <i class="fa fa-user"></i>
             <span>ABOUT</span>
           </a>
         </li>
         <li>
-          <a href="" class="navbar__item">
+          <a href="#photos" class="navbar__item">
             <i class="fa fa-eye"></i>
             <span>PHOTOS</span>
           </a>
         </li>
         <li>
-          <a href="" class="navbar__item">
+          <a href="#contact" class="navbar__item">
             <i class="fa fa-envelope"></i>
             <span>CONTACT</span>
           </a>
@@ -47,13 +47,14 @@
     </nav>
 
     <main>
-      <header class="header">
-        <h1>I'm John Doe.</h1>
-        <p>Photographer and Web Designer.</p>
-        <img src="img/man_smoke.jpg" alt="" />
-      </header>
+      
       <div class="container">
-        <div class="sector">
+        <header class="header" id="home">
+          <h1>I'm John Doe.</h1>
+          <p>Photographer and Web Designer.</p>
+          <img src="img/man_smoke.jpg" alt="" />
+        </header>
+        <div class="sector" id="about">
           <h2>My Name</h2>
           <hr />
 
@@ -107,35 +108,35 @@
           </button>
           <h3>My Price</h3>
           <div class="price">
-            <div class="price__basic">
-              <ul class="price__table">
-                <li class="price__table-grey">Basic</li>
+            <div class="list">
+              <ul>
+                <li>Basic</li>
                 <li>Web Design</li>
                 <li>Photography</li>
                 <li>5GB Storage</li>
                 <li>Mail Support</li>
                 <li>
-                  <h2>$ 10</h2>
+                  <h4>$ 10</h4>
                   <span>per month</span>
                 </li>
-                <li class="button">
-                  <button class="button__price">Sign Up</button>
+                <li>
+                  <button class="button__list">Sign Up</button>
                 </li>
               </ul>
             </div>
-            <div class="price__pro">
-              <ul class="price__table">
-                <li class="price__grey">Pro</li>
+            <div class="list">
+              <ul>
+                <li>Pro</li>
                 <li>Web Design</li>
                 <li>Photography</li>
                 <li>50GB Storage</li>
                 <li>Endless Support</li>
                 <li>
-                  <h2>$ 25</h2>
+                  <h4>$ 25</h4>
                   <span>per month</span>
                 </li>
-                <li class="button">
-                  <button class="button__price">Sign Up</button>
+                <li>
+                  <button class="button__list">Sign Up</button>
                 </li>
               </ul>
             </div>
@@ -147,7 +148,7 @@
                 <img src="img/bandmember.jpg" alt="" />
               </div>
               <div class="text">
-                <p><span>Chris Fox.</span>  CEO at Mighty Schools.</p>
+                <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
                 <p>John Doe saved us from a web disaster.</p>
               </div>
             </div>
@@ -156,66 +157,105 @@
                 <img src="img/avatar_g2.jpg" alt="" />
               </div>
               <div class="text">
-                <p><span>Rebecca Flex.</span>  CEO at Company.</p>
+                <p><span>Rebecca Flex.</span> CEO at Company.</p>
                 <p>No one is better than John Doe.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="sector">
+        <div class="sector" id="photos">
           <h2>My Photos</h2>
           <hr />
           <div class="photos">
-            <div class="photos__left">
-                <img src="img/wedding.jpg" alt="">
-                <img src="img/rocks.jpg" alt="">
-                <img src="img/sailboat.jpg" alt="">
+            <div class="photos__item">
+              <img src="img/wedding.jpg" alt="" />
+              <img src="img/rocks.jpg" alt="" />
+              <img src="img/sailboat.jpg" alt="" />
             </div>
-            <div class="photos__right">
-                <img src="img/underwater.jpg" alt="">
-                <img src="img/chef.jpg" alt="">
-                <img src="img/wedding.jpg" alt="">
-                <img src="img/typewriter.jpg" alt="">
+            <div class="photos__item">
+              <img src="img/underwater.jpg" alt="" />
+              <img src="img/chef.jpg" alt="" />
+              <img src="img/wedding.jpg" alt="" />
+              <img src="img/typewriter.jpg" alt="" />
             </div>
           </div>
         </div>
-        <div class="sector">
-            <h2>Contact Me</h2>
-            <hr>
-            <div class="contact">
-                <p>
-                    <i></i>
-                </p>
-                <p>
-                    <i></i>
-                </p>
-                <p>
-                    <i></i>
-                </p>
+        <div class="sector" id="contact">
+          <h2>Contact Me</h2>
+          <hr />
+          <div class="contact">
+            <div class="contact__item">
+              <p>
+                <i class="fa fa-map-marker fa-fw"></i>
+                Chicago, US
+              </p>
             </div>
-            <p>Let's get in touch. Send me a message:</p>
-            <form action="">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <button></button>
-            </form>
+            <div class="contact__item">
+              <p>
+                <i class="fa fa-phone fa-fw"></i>
+                Phone: +00 151515
+              </p>
+            </div>
+            <div class="contact__item">
+              <p>
+                <i class="fa fa-envelope fa-fw"></i>
+                Email: mail@mail.com
+              </p>
+            </div>
+          </div>
+          <br />
+          <p>Let's get in touch. Send me a message:</p>
+          <form action="">
+            <p>
+              <input type="text" placeholder="Name" />
+            </p>
+            <p>
+              <input type="text" placeholder="Email" />
+            </p>
+            <p>
+              <input type="text" placeholder="Subject" />
+            </p>
+            <p>
+              <input type="text" placeholder="Message" />
+            </p>
+            <p>
+              <button>
+                <i class="fa fa-paper-plane"></i>
+                SEND MESSAGE
+              </button>
+            </p>
+          </form>
         </div>
+        <footer class="sector">
+          <div class="footer">
+            <a href="https://www.facebook.com/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://www.snapchat.com/">
+              <i class="fa fa-snapchat"></i>
+            </a>
+            <a href="https://www.pinterest.com/">
+              <i class="fa fa-pinterest-p"></i>
+            </a>
+            <a href="https://twitter.com/">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com/">
+              <i class="fa fa-linkedin"></i>
+            </a>            
+            <p>
+              Powered by
+              <a
+                href="https://www.w3schools.com/w3css/default.asp"
+                target="_blank"
+                >w3.css</a>
+            </p>
+          </div>
+        </footer>
       </div>
     </main>
-    <footer class="sector">
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <p>
-            Powered by 
-            <a href=""></a>
-        </p>
-
-    </footer>
   </body>
 </html>
