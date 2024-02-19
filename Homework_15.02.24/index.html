@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <article class="form">
+            <h2>Applications for the exam!</h2>
+    
+            <div class="form__item">
+              <label for="">5 + 10 =</label>
+              <input type="text" class="exam-1" />
+            </div>
+            <div class="form__item">
+              <label for="">5 * 2 =</label>
+              <input type="text" class="exam-2" />
+            </div>
+            <div class="form__item">
+              <label for="">3 * 4 =</label>
+              <input type="text" class="exam-3" />
+            </div>
+            <div class="form__item">
+              <label for="">6 * 6 =</label>
+              <input type="text" class="exam-4" />
+            </div>
+            <div class="form__item">
+              <label for="">3 / 3 =</label>
+              <input type="text" class="exam-5" />
+            </div>
+            <div class="form__item">
+                <label for="">10-7 =</label>
+                <input type="text" class="exam-6" />
+              </div>
+              <div class="form__item">
+                <label for="">15 / 3 =</label>
+                <input type="text" class="exam-7" />
+              </div>
+              <div class="form__item">
+                <label for="">2 * 8 =</label>
+                <input type="text" class="exam-8" />
+              </div>
+              <div class="form__item">
+                <label for="">2 + 6 =</label>
+                <input type="text" class="exam-9" />
+              </div>
+              <div class="form__item">
+                <label for="">18 / 6 =</label>
+                <input type="text" class="exam-10" />
+              </div>
+    
+            <div class="form__item">
+              <button onclick="getExamResult()">GET Exam Result</button>
+            </div>
+    
+            <h2 class="result result-1">Score 20</h2>
+          </article>
+          
+          <div class="form">
+            <div class="form__item">
+              <label for="">Number 1</label>
+              <input type="text" class="form__input input-1" />
+            </div>
+            <div class="form__item">
+              <label for="">Number 2</label>
+              <input type="text" class="form__input input-2" />
+            </div>
+    
+            <div class="form__item">
+              <label for="">Number 3</label>
+              <input type="text" class="form__input input-3" />
+            </div>
+            <button onclick="checkEquality()">Check Equality</button>
+            <button onclick="hasZero()">Check for Zero</button>
+            <button onclick="sameOne()">Check for Same Values</button>
+            <button onclick="sortNumbers()">Sort Numbers</button>
+    
+            <h2 class="result result-2"></h2>
+          </div> 
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
