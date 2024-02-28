@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework_22.02.24</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <input type="text" class="inputField">
+    <button onclick="calculateSquare()">Вычислить квадрат</button>
+    <button onclick="checkEvenOdd()">Проверить четность</button>
+    <h2 class="result"></h2>
+
+    <div class="title">
+        <h1>Выбор курсов для студента</h1>
+      </div>
+  
+      <div class="products">     
+        <div class="item">
+          <label for="">Frontend:</label>
+          <select name="" class="frontendCourse">
+              <option value="300">JavaScript</option>
+              <option value="250">HTML_CSS</option>
+              <option value="400">React</option>
+          </select>
+          <label for="">Количество курсов:</label>
+          <input type="number" class="frontendCourse__input input-1">
+        </div>
+        <div class="item">
+          <label for="">Backend:</label>
+          <select name="" class="backendCourse">
+              <option value="400">NodeJS</option>
+              <option value="250">PHP</option>
+              <option value="500">Python</option>
+          </select>
+          <label for="">Количество курсов:</label>
+          <input type="number" class="backendCourse__input input-2">
+        </div>
+        <div class="item">
+          <label for="">Design:</label>
+          <select name="" class="designCourse">
+              <option value="600">Photoshop</option>
+              <option value="350">Illustrator</option>
+              <option value="550">Sketch</option>
+          </select>
+          <label for="">Количество курсов:</label>
+          <input type="number" class="designCourse__input input-3">
+        </div>
+        <button type="button" onclick="calculateTotal()">
+          Рассчитать общую стоимость
+        </button>
+        
+      </div>
+      <div class="title">
+        <h2 class="result-1"></h2>
+      </div>
+
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
