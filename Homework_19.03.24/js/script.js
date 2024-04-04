@@ -47,6 +47,15 @@ console.log("Пользователи онлайн:");
 let onlineUsers = users.filter(user => user.status === "online");
 onlineUsers.forEach(user => console.log(user.username));
 
+// 2-ой вариант
+
+let onlinUsers = users
+    .filter(user => user.status === "online")
+    .map(user => user.username);
+
+console.log("Имена пользователей, которые сейчас в сети:", onlinUsers);
+
+
 // 2. Отобразить как пользователей онлайн, так и пользователей offline с активностью не более 10 минут назад
 
 console.log("Пользователи онлайн и недавно активные:");
@@ -58,3 +67,19 @@ allUsers.forEach(user => {
         console.log(user.username);
     }
 });
+
+
+// 2-ой вариант
+
+const output = users.reduce((result, user) => {
+    if (user.status === "online") {
+        result.push(user.username);
+    } else if (user.lastActivity <= 10) {
+        result.push(`${user.username} ${user.lastActivity} minutes ago`);
+    }
+    return result;
+}, []);
+
+console.log("Пользователи онлайн и недавно активные:");
+
+output.forEach(entry => console.log(entry));
